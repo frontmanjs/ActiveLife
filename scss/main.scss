@@ -11,7 +11,7 @@ body {
 	flex-direction: column;
 	position: relative;
 	height: 100vh;
-font-family: sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 	color: #fff;
 	background-color: #2b4162;
 	background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
@@ -45,10 +45,9 @@ font-family: sans-serif;
 	height: 50%;
 	border: 3px solid white;
 	border-radius: 30px;
-	background-color: rgba($color: black, $alpha: .2);
+	background-color: rgba($color: black, $alpha: 0.2);
 	transition: opacity 0.3s;
 	opacity: 0;
-	
 }
 
 label {
@@ -80,4 +79,3 @@ button:hover {
 	background-color: #ddd;
 	color: #000;
 }
-
