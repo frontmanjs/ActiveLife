@@ -35,16 +35,16 @@ const calc = () => {
 		resultMore.textContent =
 			'Wygłodzenie - To krytyczny stan wynikający z skrajnego niedożywienia, który może zagrażać życiu. Konieczna jest natychmiastowa interwencja medyczna w celu przywrócenia zdrowia.';
 	}
-	result.textContent = `Twoje BMI to ${bmi.toFixed(2)}`;
+	result.textContent = `Twoje BMI to ${bmi}`;
 	
 };
 
 const calcBmi = () => {
 	if (weight.value !== '' && height.value !== '') {
 		calc();
-		
 	} else {
 		result.textContent = 'Brak wpisanej wartości';
+		resultMore.textContent = ''
 	}
 	border.style.opacity = '1';
 };
