@@ -5,6 +5,7 @@ const resultMore = document.querySelector('.result-more');
 const calcBtn = document.querySelector('.calc');
 const changeBtn = document.querySelector('.change');
 const border = document.querySelector('.result-border');
+const animation = document.querySelector('.rotate-scale-up-hor')
 let bmi;
 
 const calc = () => {
@@ -34,7 +35,7 @@ const calc = () => {
 		resultMore.textContent =
 			'Wygłodzenie - To krytyczny stan wynikający z skrajnego niedożywienia, który może zagrażać życiu. Konieczna jest natychmiastowa interwencja medyczna w celu przywrócenia zdrowia.';
 	}
-	result.textContent = `Twoje BMI to ${bmi}`;
+	result.textContent = `Twoje BMI to ${bmi.toFixed(2)}`;
 	
 };
 
