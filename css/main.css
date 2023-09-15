@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #fff;
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  font-size: 24px;
+}
+
+.title {
+  font-size: 80px;
+  padding: 60px;
+  font-family: "Quattrocento", serif;
+}
+
+.result {
+  padding-top: 10px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  transition: opacity 0.3s;
+}
+
+.result-more {
+  padding: 0 30px 0 30px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  transition: opacity 0.3s;
+}
+
+.result-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 50%;
+  border: 3px solid white;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+button {
+  padding: 20px 40px;
+  margin: 20px;
+  cursor: pointer;
+  background: none;
+  color: #fff;
+  font-size: 18px;
+  border: 3px solid #ddd;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #ddd;
+  color: #000;
+}/*# sourceMappingURL=main.css.map */
