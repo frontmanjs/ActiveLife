@@ -18,11 +18,11 @@ burgerBtn.addEventListener('click', handleNav);
 
 const infoBoxShadow = document.querySelector('.info-box-shadow');
 
-const infoBtn = document.querySelector('.info-btn');
+const infoBtn = document.querySelector('.info');
 
 const show = () => {
 	infoBoxShadow.style.opacity = '1';
-	infoBoxShadow.style.zIndex = '1';
+	infoBoxShadow.style.zIndex = '1000000';
 };
 
 const hide = () => {
