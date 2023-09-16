@@ -293,4 +293,9 @@ select {
 .info-text-close {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.3607843137);
+}
+
+.gender {
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=main.css.map */
