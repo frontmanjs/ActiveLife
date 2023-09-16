@@ -1,5 +1,3 @@
-
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -201,4 +199,18 @@ button {
 button:hover {
 	background-color: #ddd;
 	color: #000;
+}
+
+//CALORIES
+
+select {
+	margin: 30px;
+	padding: 20px;
+	width: 240px;
+	height: 60px;
+	font-size: 16px;
+}
+
+.activity{
+	width: 480px;
 }

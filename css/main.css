@@ -196,4 +196,16 @@ button {
 button:hover {
   background-color: #ddd;
   color: #000;
+}
+
+select {
+  margin: 30px;
+  padding: 20px;
+  width: 240px;
+  height: 60px;
+  font-size: 16px;
+}
+
+.activity {
+  width: 480px;
 }/*# sourceMappingURL=main.css.map */

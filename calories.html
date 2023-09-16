@@ -32,7 +32,39 @@
 
     <!-- KALKULATOR -->
 
-   
+    <div data-aos="zoom-out" data-aos-easing="ease-out-cubic" data-aos-duration="700" class="title">
+        <p>Calories Calculator</p>
+    </div>
+    <label for="height">Enter your height (cm)</label>
+    <input value="" type="number" id="calorie-height" placeholder="Height...">
+    <label for="weight">Enter your weight (kg)</label>
+    <input value="" type="number" id="calorie-weight" placeholder="Weight...">
+    <label for="age">Enter your age (full years)</label>
+    <input value="" type="number" id="age" placeholder="Age...">
+    <label for="gender">Choose your gender</label>
+    <select id="Gender">
+        <option class="gender" value="gender">Gender</option>
+        <option class="male" value="male">Male</option>
+        <option class="female" value="female">Female</option>
+    </select>
+    <label for="activity">Physical activity</label>
+    <select class="activity" id="Activity">
+        <option class="negligible" value="negligible">Negligible(no exercise, sedentary job, school)</option>
+        <option class="very-small" value="very-small">Very small(exercise once a week, light work)</option>
+        <option class="moderate" value="moderate">Moderate(exercise 2 times a week - medium intensity)</option>
+        <option class="high" value="high">High(quite heavy training several times a week)</option>
+        <option class="very-high" value="very-high">Very high(at least 4 heavy workouts per week, physical work)</option>
+    </select>
+    <div class="result-border">
+        <p class="result-calorie"></p>
+        <p class="result-more-calorie"></p>
+    </div>
+
+    <div>
+        <button class="calc">Calculate</button>
+        <button class="change">Reset</button>
+    </div>
+
 
 
 

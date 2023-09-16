@@ -1,20 +1,18 @@
-
 //NAV
 
-const burgerBtn = document.querySelector('.burger')
-const barsIco = document.querySelector('.fa-bars')
-const xIco = document.querySelector('.fa-times')
-const nav = document.querySelector('nav ul')
+const burgerBtn = document.querySelector('.burger');
+const barsIco = document.querySelector('.fa-bars');
+const xIco = document.querySelector('.fa-times');
+const nav = document.querySelector('nav ul');
 
+const handleNav = () => {
+	nav.classList.toggle('active');
+	burgerBtn.classList.toggle('active');
+	barsIco.classList.toggle('hide');
+	xIco.classList.toggle('hide');
+};
 
-const handleNav = () =>{
-	nav.classList.toggle('active')
-	burgerBtn.classList.toggle('active')
-	barsIco.classList.toggle('hide')
-	xIco.classList.toggle('hide')
-}
-
-burgerBtn.addEventListener('click', handleNav)
+burgerBtn.addEventListener('click', handleNav);
 
 //BMI
 
@@ -25,7 +23,7 @@ const resultMore = document.querySelector('.result-more');
 const calcBtn = document.querySelector('.calc');
 const changeBtn = document.querySelector('.change');
 const border = document.querySelector('.result-border');
-const animation = document.querySelector('.rotate-scale-up-hor')
+const animation = document.querySelector('.rotate-scale-up-hor');
 let bmi;
 
 const calc = () => {
@@ -51,12 +49,11 @@ const calc = () => {
 	} else if (bmi < 16 && bmi > 16.99) {
 		resultMore.textContent =
 			'Emaciation - This condition indicates very low body weight, which is dangerous to health. It requires immediate medical care and monitoring.';
-	} else if (bmi >= 15.99) {
+	} else if (bmi <= 15.99) {
 		resultMore.textContent =
 			'Starvation - This is a critical condition resulting from extreme malnutrition that can be life-threatening. Immediate medical intervention is needed to restore health.';
 	}
 	result.textContent = `Your BMI is ${bmi.toFixed(2)}`;
-	
 };
 
 const calcBmi = () => {
@@ -64,7 +61,7 @@ const calcBmi = () => {
 		calc();
 	} else {
 		result.textContent = 'No value entered';
-		resultMore.textContent = ''
+		resultMore.textContent = '';
 	}
 	border.style.opacity = '1';
 };
@@ -78,3 +75,6 @@ const changeBmi = () => {
 
 calcBtn.addEventListener('click', calcBmi);
 changeBtn.addEventListener('click', changeBmi);
+
+//CALORIES
+
