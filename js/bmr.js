@@ -47,23 +47,28 @@ const calcCaloriesFemale = () => {
 // };
 
 const calcBmr = () => {
-    if(heightCalorie.value !== '' && weightCalorie.value !== '' && age.value !== ''){
-
-    
-	const optionMale = document.querySelector('input[value="male"]:checked');
-	const optionFemale = document.querySelector('input[value="female"]:checked');
-	if (optionMale) {
-		calcCaloriesMale();
-	} else if (optionFemale) {
-		calcCaloriesFemale();
-	}else{
-        resultCalorie.textContent = 'Missing value 🤨';
-        borderCal.style.opacity = '1';
-    }
-}else{
-    resultCalorie.textContent = 'Missing value 🤨';
-    borderCal.style.opacity = '1';
-}}
+	if (
+		heightCalorie.value !== '' &&
+		weightCalorie.value !== '' &&
+		age.value !== ''
+	) {
+		const optionMale = document.querySelector('input[value="male"]:checked');
+		const optionFemale = document.querySelector(
+			'input[value="female"]:checked'
+		);
+		if (optionMale) {
+			calcCaloriesMale();
+		} else if (optionFemale) {
+			calcCaloriesFemale();
+		} else {
+			resultCalorie.textContent = 'Missing value 🤨';
+			borderCal.style.opacity = '1';
+		}
+	} else {
+		resultCalorie.textContent = 'Missing value 🤨';
+		borderCal.style.opacity = '1';
+	}
+};
 
 const changeBmr = () => {
 	heightCalorie.value = '';

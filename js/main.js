@@ -1,6 +1,5 @@
 //NAV
 
-
 const burgerBtn = document.querySelector('.burger');
 const barsIco = document.querySelector('.fa-bars');
 const xIco = document.querySelector('.fa-times');
@@ -13,10 +12,7 @@ const handleNav = () => {
 	xIco.classList.toggle('hide');
 };
 
-
 burgerBtn.addEventListener('click', handleNav);
-
-
 
 //INFO
 
