@@ -4,34 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/36b88b7451.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quattrocento&family=Quattrocento+Sans&display=swap"
         rel="stylesheet">
-    <title>BMI Calcualtor</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>ActiveLIfe Portal</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navId">
 
-    <div class="title">
-        <p>BMI Calcualtor</p>
-    </div>
-    <label for="height">Enter your height (cm)</label>
-    <input value="" type="number" id="height" placeholder="Height...">
-    <label for="weight">Enter your weight (kg)</label>
-    <input value="" type="number" id="weight" placeholder="Weight...">
-    <div class="result-border">
-        <p class="result"></p>
-        <p class="result-more"></p>
+    <!-- NAV -->
+
+    <div class="wrap">
+        <nav id="navId">
+            <button class="burger">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times hide"></i>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">BMI Calculator</a></li>
+                <li><a href="calories.html">Calories</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <div>
-        <button class="calc">Calculate</button>
-        <button class="change">Reset</button>
-    </div>
+    <!-- HOME -->
+    <section class="home">
+        <div class="home-shadow"></div>
+        <div class="home-title">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <div class="text">
+            <h2>Welcome to the "ActiveLife Portal" website, your one-stop source for fitness-related information and
+                tools and fitness calculators. Our site is designed for anyone who cares about their health and
+                fitness
+                and is looking for help in achieving their fitness goals.</h2>
+        </div>
 
+        <div class="boxes">
+
+
+            <div data-aos="fade-down-left" class="box left">
+                <p class="box-text">Fitness Calculators: "FitLife" offers a wide range of fitness calculators to
+                    help
+                    you monitor and plan your physical activity. Our tools allow you to calculate your BMI (Body
+                    Mass
+                    Index), caloric requirements and many other parameters to help you understand and track your
+                    progress.</p>
+            </div>
+
+            <br>
+            <div data-aos="fade-down-right" class="box right">
+                <p class="box-text">Tips and Articles: Our site contains a rich collection of articles, guides and
+                    information on fitness, healthy living, training, nutrition and many other aspects of fitness.
+                    Whether you're a beginner or an experienced fitness enthusiast, you'll find valuable tips and
+                    inspiration here.</p>
+            </div>
+            <br>
+            <div data-aos="fade-down-left" class="box left">
+                <p class="box-text">News: Stay up to date with the latest news in the world of fitness. Browse news,
+                    supplement news, sports equipment and fitness events.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 
